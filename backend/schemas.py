@@ -1,32 +1,19 @@
 from typing import Optional, Literal
 from pydantic import BaseModel
 
-Category = Literal[
-    "document_comparison", "new_si_request",
-    "invoice_query", "general_message", "spam",
-]
+Category = Literal["BL_COMPARISON", "SI_REQUEST", "INVOICE_QUERY", "GENERAL", "SPAM"]
+Status = Literal["OK", "MISMATCH", "NEEDS_REVIEW"]
+ReviewReason = Literal["wrong_doc_type", "missing_attachment", "unreadable", "missing_value"]
 
-# The 7 fields to compare (from the brief)
-FIELDS = [
-    "shipper", "consignee", "notify_party",
-    "port_of_loading", "port_of_discharge",
-    "container_count", "gross_weight_kg",
-]
-
-
-class FieldCheck(BaseModel):
-    field: str
-    si_value: Optional[str] = None
-    bl_value: Optional[str] = None
-    match: bool
-
+FIELDS = ["shipper", "consignee", "notify_party", "port_of_loading",
+          "port_of_discharge", "container_count", "gross_weight_kg"]
 
 class EmailResult(BaseModel):
     email_id: str
     category: Category
     confidence: float = 1.0
-    needs_review: bool = False          # human-in-the-loop flag
-    review_reason: Optional[str] = None
-    mismatch_found: Optional[bool] = None   # only for document_comparison
-    fields: list[FieldCheck] = []
+    status: Optional[Status] = None
+    has_defect: Optional[bool] = None
+    defect_fields: list[str] = []
+    review_reason: Optional[ReviewReason] = None
     error: Optional[str] = None
