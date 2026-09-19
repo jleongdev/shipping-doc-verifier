@@ -20,15 +20,30 @@ def complete_json(system: str, user: str, *, model: str = MODEL_MAIN,
     """Call Claude and parse a JSON object from its reply.
     The SDK already retries network/429/5xx. We add one retry for bad JSON."""
     last_text = ""
+
     for _ in range(2):
         resp = client.messages.create(
-            model=model, max_tokens=max_tokens,
+            model=model,
+            max_tokens=max_tokens,
             system=system,
             messages=[{"role": "user", "content": user}],
         )
-        last_text = next((b.text for b in resp.content if b.type == "text"), "")
+
+        last_text = next(
+            (b.text for b in resp.content if b.type == "text"),
+            ""
+        )
+
         try:
-            return json.loads(last_text)
+            cleaned = last_text.strip()
+
+            if cleaned.startswith("```"):
+                cleaned = cleaned.split("\n", 1)[1]
+                cleaned = cleaned.rsplit("```", 1)[0].strip()
+
+            return json.loads(cleaned)
+
         except json.JSONDecodeError:
             user += "\n\nReturn ONLY valid JSON, nothing else."
+
     raise LLMError(f"Model did not return valid JSON:\n{last_text}")
