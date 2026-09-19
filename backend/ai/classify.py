@@ -2,35 +2,35 @@
 from .claude import complete_json, MODEL_CHEAP
 
 ALLOWED_CATEGORIES = {
-    "document_comparison",
-    "new_si_request",
-    "invoice_query",
-    "general_message",
-    "spam",
+    "BL_COMPARISON",
+    "SI_REQUEST",
+    "INVOICE_QUERY",
+    "GENERAL",
+    "SPAM",
 }
 
 _SYSTEM = """You classify shipping-operations emails into exactly one category.
 
 Allowed categories:
 
-1. document_comparison
+1. BL_COMPARISON
    - The sender wants a draft Bill of Lading (BL) checked, confirmed, verified,
      or compared against a Shipping Instruction (SI).
    - Includes requests to review or confirm draft BL details.
 
-2. new_si_request
+2. SI_REQUEST
    - The email requests, provides, updates, or discusses a Shipping Instruction (SI).
    - The main intent is obtaining or handling the SI, not comparing SI vs BL.
 
-3. invoice_query
+3. INVOICE_QUERY
    - The email is mainly about invoices, billing, charges, payment, freight charges,
      cancellation of invoices, GR, detention, demurrage, or other billing issues.
 
-4. general_message
+4. GENERAL
    - Normal operational communication that does not fit the categories above.
    - Includes updates, reminders, reports, notifications, HR/general messages.
 
-5. spam
+5. SPAM
    - Phishing, scams, fake prizes, suspicious promotions, fraudulent requests,
      or clearly irrelevant unsolicited email.
 
@@ -39,6 +39,8 @@ Important rules:
 - Do not let signatures, quoted email history, warning banners, or unrelated boilerplate
   override the current message's intent.
 - Choose exactly one category.
+- The category MUST be one of: BL_COMPARISON, SI_REQUEST, INVOICE_QUERY, GENERAL, SPAM
+  (exact uppercase spelling).
 - confidence must be a number from 0.0 to 1.0.
 - If two categories seem possible, choose the one that best represents what the sender
   currently wants the recipient to do.
