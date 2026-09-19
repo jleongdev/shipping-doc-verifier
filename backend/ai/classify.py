@@ -1,5 +1,7 @@
-# ai/classify.py  (role 2 owns this)
+import math
+
 from .claude import complete_json, MODEL_CHEAP
+
 
 ALLOWED_CATEGORIES = {
     "BL_COMPARISON",
@@ -8,6 +10,7 @@ ALLOWED_CATEGORIES = {
     "GENERAL",
     "SPAM",
 }
+
 
 _SYSTEM = """You classify shipping-operations emails into exactly one category.
 
@@ -49,6 +52,7 @@ Reply ONLY with valid JSON in this exact structure:
 {"category": "...", "confidence": 0.0, "reason": "..."}
 """
 
+
 def classify_email(subject: str, body: str) -> dict:
     result = complete_json(
         _SYSTEM,
@@ -61,13 +65,20 @@ def classify_email(subject: str, body: str) -> dict:
     confidence = result.get("confidence", 0.0)
 
     if category not in ALLOWED_CATEGORIES:
-        raise ValueError(f"Invalid category returned by model: {category}")
+        raise ValueError(
+            f"Invalid category returned by model: {category}"
+        )
 
     try:
         confidence = float(confidence)
     except (TypeError, ValueError):
         confidence = 0.0
 
+    # Reject NaN and Infinity.
+    if not math.isfinite(confidence):
+        confidence = 0.0
+
+    # Clamp normal numeric values to 0.0–1.0.
     confidence = max(0.0, min(1.0, confidence))
 
     result["category"] = category
