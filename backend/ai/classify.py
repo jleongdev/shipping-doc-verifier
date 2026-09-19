@@ -1,9 +1,85 @@
-# ai/classify.py  (role 2 owns this)
+import math
+
 from .claude import complete_json, MODEL_CHEAP
 
-_SYSTEM = """Classify a shipping-ops email into exactly one category:
-document_comparison, new_si_request, invoice_query, general_message, spam.
-Reply ONLY as JSON: {"category": "...", "confidence": 0.0, "reason": "..."}"""
+
+ALLOWED_CATEGORIES = {
+    "document_comparison",
+    "new_si_request",
+    "invoice_query",
+    "general_message",
+    "spam",
+}
+
+
+_SYSTEM = """You classify shipping-operations emails into exactly one category.
+
+Allowed categories:
+
+1. document_comparison
+   - The sender wants a draft Bill of Lading (BL) checked, confirmed, verified,
+     or compared against a Shipping Instruction (SI).
+   - Includes requests to review or confirm draft BL details.
+
+2. new_si_request
+   - The email requests, provides, updates, or discusses a Shipping Instruction (SI).
+   - The main intent is obtaining or handling the SI, not comparing SI vs BL.
+
+3. invoice_query
+   - The email is mainly about invoices, billing, charges, payment, freight charges,
+     cancellation of invoices, GR, detention, demurrage, or other billing issues.
+
+4. general_message
+   - Normal operational communication that does not fit the categories above.
+   - Includes updates, reminders, reports, notifications, HR/general messages.
+
+5. spam
+   - Phishing, scams, fake prizes, suspicious promotions, fraudulent requests,
+     or clearly irrelevant unsolicited email.
+
+Important rules:
+- Classify based on the main actionable intent of the newest email message.
+- Do not let signatures, quoted email history, warning banners, or unrelated boilerplate
+  override the current message's intent.
+- Choose exactly one category.
+- confidence must be a number from 0.0 to 1.0.
+- If two categories seem possible, choose the one that best represents what the sender
+  currently wants the recipient to do.
+
+Reply ONLY with valid JSON in this exact structure:
+{"category": "...", "confidence": 0.0, "reason": "..."}
+"""
+
 
 def classify_email(subject: str, body: str) -> dict:
-    return complete_json(_SYSTEM, f"Subject: {subject}\n\n{body}", model=MODEL_CHEAP, max_tokens=256)
+    result = complete_json(
+        _SYSTEM,
+        f"Subject: {subject}\n\n{body}",
+        model=MODEL_CHEAP,
+        max_tokens=256
+    )
+
+    category = result.get("category")
+    confidence = result.get("confidence", 0.0)
+
+    if category not in ALLOWED_CATEGORIES:
+        raise ValueError(
+            f"Invalid category returned by model: {category}"
+        )
+
+    try:
+        confidence = float(confidence)
+    except (TypeError, ValueError):
+        confidence = 0.0
+
+    # Reject NaN and Infinity.
+    if not math.isfinite(confidence):
+        confidence = 0.0
+
+    # Clamp normal numeric values to 0.0–1.0.
+    confidence = max(0.0, min(1.0, confidence))
+
+    result["category"] = category
+    result["confidence"] = confidence
+
+    return result
