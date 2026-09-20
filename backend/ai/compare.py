@@ -87,6 +87,7 @@ _TOKEN_CANON = {
 }
 
 
+_ON_BEHALF = re.compile(r"\bON\s+BEHALF\s+OF\b.*$", re.S)
 _ORDER_PREFIX = re.compile(r"^\s*TO\s+(?:THE\s+)?ORDER(?:\s+OF)?\b[\s:.-]*")
 
 
@@ -96,6 +97,9 @@ def normalize_company(name) -> str:
     without_order = _ORDER_PREFIX.sub("", text)  # 'TO THE ORDER OF: X' is the consignee label, not part of the name
     if without_order.strip():  # ...but a bare 'TO ORDER' is kept as it is
         text = without_order
+    before_behalf = _ON_BEHALF.sub("", text)  # 'APRIL FINE PAPER TRADING ON BEHALF OF X' is the name + an address line
+    if before_behalf.strip():
+        text = before_behalf
     text = text.replace("&", " AND ")
     text = re.sub(r"\b([A-Z])\.(?=[A-Z]\b)", r"\1", text)  # L.L.C. -> LLC
     text = re.sub(r"[\W_]+", " ", text)  # punctuation -> space (keeps letters of any script)

@@ -108,3 +108,10 @@ def test_corrupt_files_raise_reader_error_not_a_random_crash(name):
 def test_unsupported_type_raises_reader_error():
     with pytest.raises(ReaderError, match="unsupported"):
         read_document(b"x", "picture.png")
+
+
+def test_pdf_page_info_tells_a_blank_pdf_from_a_broken_one():
+    from ai.readers import pdf_page_info
+
+    assert pdf_page_info(make_pdf([])) == (1, 0)
+    assert pdf_page_info(b"not a pdf") is None

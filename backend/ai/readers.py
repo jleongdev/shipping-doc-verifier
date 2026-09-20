@@ -106,3 +106,13 @@ def read_document(data: bytes, filename: str) -> str:
     except Exception as err:  # corrupt, password-protected, wrong file type, ...
         raise ReaderError(f"could not open {Path(filename).name}: {type(err).__name__}: {err}") from err
     raise ReaderError(f"unsupported file type: {suffix or filename}")
+
+
+def pdf_page_info(data: bytes):
+    """(number of pages, number of embedded images) of a PDF, or None if it cannot be opened."""
+    try:
+        pdfplumber = _need("pdfplumber", "pdfplumber")
+        with pdfplumber.open(io.BytesIO(data)) as pdf:
+            return len(pdf.pages), sum(len(page.images) for page in pdf.pages)
+    except Exception:
+        return None

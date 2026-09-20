@@ -23,7 +23,9 @@ sys.path.insert(0, str(ROOT / "backend"))
 
 import anthropic  # noqa: E402
 from ai.compare import FIELDS, compare  # noqa: E402  (backend/ai/compare.py)
+from ai.doctype import wrong_kind  # noqa: E402  (backend/ai/doctype.py)
 from ai.extract import MODEL, extract_fields  # noqa: E402  (backend/ai/extract.py)
+from ai.readers import SUPPORTED_SUFFIXES, ReaderError, read_document  # noqa: E402  (backend/ai/readers.py)
 from dotenv import load_dotenv  # noqa: E402
 from loader import Inbox  # noqa: E402  (backend/loader.py)
 
@@ -77,14 +79,25 @@ def check_email(inbox: Inbox, email_id: str) -> None:
     if not si_path or not bl_path:
         print("  skipped: this email does not have BOTH an SI and a BL attachment.")
         return
-    # Only plain-text files for now. Some emails have .xlsx / .docx / .pdf - we add those later.
-    for path in (si_path, bl_path):
-        if not path.lower().endswith(".txt"):
-            print(f"  skipped: {path} is not a .txt file yet.")
+    try:
+        si_text = read_document(inbox.read_bytes(si_path), si_path)
+        bl_text = read_document(inbox.read_bytes(bl_path), bl_path)
+    except ReaderError as err:
+        print(f"  skipped: {err}")
+        return
+    for name, text in (("SI", si_text), ("BL", bl_text)):
+        if not text.strip():
+            print(f"  skipped: the {name} has no text (scanned image?). Try dump_document.py to see what the reader found.")
             return
 
-    si = extract_fields(inbox.read_text(si_path), "SI")
-    bl = extract_fields(inbox.read_text(bl_path), "BL")
+    for name, text in (("SI", si_text), ("BL", bl_text)):
+        found = wrong_kind(text, name)
+        if found:
+            print(f"  NEEDS REVIEW (wrong_doc_type): the {name} attachment is a {found}. No API call made.")
+            return
+
+    si = extract_fields(si_text, "SI")
+    bl = extract_fields(bl_text, "BL")
     result = compare(si, bl)
 
     labels = {"match": "OK", "mismatch": "DIFF", "review": "REVIEW"}

@@ -281,3 +281,16 @@ def test_email_004_full_result_flags_consignee_and_notify_party_only():
     result = compare(si, bl)
     assert [f for f in FIELDS if result["statuses"][f] == "mismatch"] == ["consignee", "notify_party"]
     assert result["needs_review"] is False
+
+
+# --- regression from real data: "APRIL FINE PAPER TRADING ON BEHALF OF VITAL SOLUTIONS PTE LTD" ------------------
+def test_on_behalf_of_is_an_address_line_not_part_of_the_shipper_name():
+    assert compare_company("APRIL FINE PAPER TRADING", "APRIL FINE PAPER TRADING ON BEHALF OF VITAL SOLUTIONS PTE LTD")[0] == "match"
+
+
+def test_a_different_shipper_is_still_a_mismatch_even_with_on_behalf_of():
+    assert compare_company("APRIL FINE PAPER TRADING ON BEHALF OF X PTE LTD", "ASIA PACIFIC PAPERBOARD TRADING PTE LTD")[0] == "mismatch"
+
+
+def test_a_name_that_starts_with_on_behalf_of_is_left_alone():
+    assert normalize_company("ON BEHALF OF VITAL SOLUTIONS") == "ON BEHALF OF VITAL SOLUTIONS"
