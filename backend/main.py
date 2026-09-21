@@ -33,7 +33,9 @@ def review_queue(limit: int | None = None):
         flagged = flagged[:limit]
     return [r.model_dump() for r in flagged]
 
+from .submission import write_submission
+
 @app.post("/submit")
 def submit():
-    payload = build_submission(process_all(inbox))
-    return inbox.submit(payload)   # TODO: confirm loader's submit signature
+    payload = write_submission(process_all(inbox))   # writes submission.json
+    return {"emails": len(payload), "wrote": "submission.json"}
