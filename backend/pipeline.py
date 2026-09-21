@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 from .schemas import EmailResult, FIELDS
 from .ai.classify import classify_email
-# from .ai.extract import extract_fields   # role 3 — swap in when ready
+from .ai.extract import extract_fields   # role 3 — swap in when ready
 
 
 # ---------- find an email's SI and BL attachments ----------
@@ -52,8 +52,20 @@ def read_document(inbox, path: str) -> str:
 
 # ---------- compare + orchestrate ----------
 
-def _norm(v):
-    return " ".join(str(v).strip().lower().split()) if v not in (None, "") else None
+_NUMERIC = {"container_count", "gross_weight_kg"}
+
+def _norm(field, value):
+    if value is None:
+        return None
+    s = str(value).strip().lower()
+    if field in _NUMERIC:
+        s = s.replace(",", "").replace("kg", "").strip()
+        try:
+            return str(float(s))
+        except ValueError:
+            return s
+    return " ".join(s.split())
+
 
 def _stub_extract(text: str) -> dict:
     """TEMPORARY until role 3's extract_fields lands."""
@@ -76,15 +88,15 @@ def process_email(email: dict, inbox) -> EmailResult:
             return EmailResult(email_id=email_id, category=category, confidence=confidence,
                                status="NEEDS_REVIEW", review_reason="missing_attachment")
 
-        si = _stub_extract(si_text)        # ← swap _stub_extract → extract_fields when ready
-        bl = _stub_extract(bl_text)
+        si = extract_fields(si_text)
+        bl = extract_fields(bl_text)
 
         missing = [f for f in FIELDS if si.get(f) is None or bl.get(f) is None]
         if missing:
             return EmailResult(email_id=email_id, category=category, confidence=confidence,
                                status="NEEDS_REVIEW", review_reason="missing_value")
 
-        defects = [f for f in FIELDS if _norm(si[f]) != _norm(bl[f])]
+        defects = [f for f in FIELDS if _norm(f, si[f]) != _norm(f, bl[f])]
         if defects:
             return EmailResult(email_id=email_id, category=category, confidence=confidence,
                                status="MISMATCH", has_defect=True, defect_fields=defects)
