@@ -140,7 +140,7 @@
     "has_defect": null
   },
   "email_021": {
-    "category": "SI_REQUEST",
+    "category": "GENERAL",
     "status": null,
     "review_reason": null,
     "defect_fields": [],
@@ -595,7 +595,7 @@
     "has_defect": null
   },
   "email_086": {
-    "category": "GENERAL",
+    "category": "SI_REQUEST",
     "status": null,
     "review_reason": null,
     "defect_fields": [],
@@ -1659,7 +1659,7 @@
     "has_defect": null
   },
   "email_238": {
-    "category": "SI_REQUEST",
+    "category": "GENERAL",
     "status": null,
     "review_reason": null,
     "defect_fields": [],
@@ -2416,1226 +2416,1226 @@
   },
   "email_346": {
     "category": "GENERAL",
-    "status": null,
-    "review_reason": null,
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_347": {
     "category": "GENERAL",
-    "status": null,
-    "review_reason": null,
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_348": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_349": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_350": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_351": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_352": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_353": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_354": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_355": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_356": {
     "category": "GENERAL",
-    "status": null,
-    "review_reason": null,
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_357": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_358": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_359": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_360": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_361": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_362": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_363": {
-    "category": "SPAM",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_364": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_365": {
-    "category": "SPAM",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_366": {
     "category": "GENERAL",
-    "status": null,
-    "review_reason": null,
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_367": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_368": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_369": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_370": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_371": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_372": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_373": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_374": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_375": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_376": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_377": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_378": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_379": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_380": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_381": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_382": {
-    "category": "SPAM",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_383": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_384": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_385": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_386": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_387": {
-    "category": "SPAM",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_388": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_389": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_390": {
-    "category": "SPAM",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_391": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_392": {
-    "category": "SPAM",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_393": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_394": {
     "category": "GENERAL",
-    "status": null,
-    "review_reason": null,
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_395": {
-    "category": "SPAM",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_396": {
     "category": "GENERAL",
-    "status": null,
-    "review_reason": null,
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_397": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_398": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_399": {
     "category": "GENERAL",
-    "status": null,
-    "review_reason": null,
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_400": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_401": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_402": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_403": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_404": {
-    "category": "SPAM",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_405": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_406": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_407": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_408": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_409": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_410": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_411": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_412": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_413": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_414": {
     "category": "GENERAL",
-    "status": null,
-    "review_reason": null,
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_415": {
     "category": "GENERAL",
-    "status": null,
-    "review_reason": null,
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_416": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_417": {
-    "category": "SPAM",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_418": {
     "category": "GENERAL",
-    "status": null,
-    "review_reason": null,
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_419": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_420": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_421": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_422": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_423": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_424": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_425": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_426": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_427": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_428": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_429": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_430": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_431": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_432": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_433": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_434": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_435": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_436": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_437": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_438": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_439": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_440": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_441": {
     "category": "GENERAL",
-    "status": null,
-    "review_reason": null,
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_442": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_443": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_444": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_445": {
     "category": "GENERAL",
-    "status": null,
-    "review_reason": null,
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_446": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_447": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_448": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_449": {
-    "category": "SPAM",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_450": {
-    "category": "SPAM",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_451": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_452": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_453": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_454": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_455": {
-    "category": "SPAM",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_456": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_457": {
-    "category": "SPAM",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_458": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_459": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_460": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_461": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_462": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_463": {
     "category": "GENERAL",
-    "status": null,
-    "review_reason": null,
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_464": {
     "category": "GENERAL",
-    "status": null,
-    "review_reason": null,
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_465": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_466": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_467": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_468": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_469": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_470": {
-    "category": "SPAM",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_471": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_472": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_473": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_474": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_475": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_476": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_477": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_478": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_479": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_480": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_481": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_482": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_483": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_484": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_485": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_486": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_487": {
-    "category": "SI_REQUEST",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_488": {
     "category": "GENERAL",
-    "status": null,
-    "review_reason": null,
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_489": {
-    "category": "SPAM",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_490": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_491": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_492": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_493": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_494": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_495": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_496": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_497": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_498": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_499": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_500": {
-    "category": "INVOICE_QUERY",
-    "status": null,
-    "review_reason": null,
+    "category": "GENERAL",
+    "status": "NEEDS_REVIEW",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_501": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_502": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_503": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_504": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_505": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_506": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_507": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_508": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_509": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_510": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_attachment",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_511": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_512": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_513": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_514": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_515": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_516": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_517": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_518": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_519": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   },
   "email_520": {
-    "category": "BL_COMPARISON",
+    "category": "GENERAL",
     "status": "NEEDS_REVIEW",
-    "review_reason": "missing_value",
+    "review_reason": "unreadable",
     "defect_fields": [],
     "has_defect": null
   }
