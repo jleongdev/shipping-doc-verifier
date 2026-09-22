@@ -1,9 +1,10 @@
-import json
+import os, json
 from pathlib import Path
-from .schemas import EmailResult, FIELDS
+from .schemas import EmailResult, FieldCheck, FIELDS
 from .ai.classify import classify_email
-from .ai.extract import extract_fields   # role 3 — swap in when ready
+from .ai.extract import extract_fields  
 
+CACHE_PATH = "cache/results.json"
 
 # ---------- find an email's SI and BL attachments ----------
 
@@ -91,21 +92,44 @@ def process_email(email: dict, inbox) -> EmailResult:
         si = extract_fields(si_text)
         bl = extract_fields(bl_text)
 
-        missing = [f for f in FIELDS if si.get(f) is None or bl.get(f) is None]
+        checks = [
+            FieldCheck(field=f, si_value=si.get(f), bl_value=bl.get(f),
+                       match=_norm(f, si.get(f)) == _norm(f, bl.get(f)))
+            for f in FIELDS
+        ]
+
+        missing = [f for f in FIELDS if (si.get(f) is None) != (bl.get(f) is None)]
         if missing:
             return EmailResult(email_id=email_id, category=category, confidence=confidence,
-                               status="NEEDS_REVIEW", review_reason="missing_value")
+                               status="NEEDS_REVIEW", review_reason="missing_value", fields=checks)
 
-        defects = [f for f in FIELDS if _norm(f, si[f]) != _norm(f, bl[f])]
+        defects = [c.field for c in checks if not c.match]
         if defects:
             return EmailResult(email_id=email_id, category=category, confidence=confidence,
-                               status="MISMATCH", has_defect=True, defect_fields=defects)
+                               status="MISMATCH", has_defect=True, defect_fields=defects, fields=checks)
         return EmailResult(email_id=email_id, category=category, confidence=confidence,
-                           status="OK", has_defect=False)
+                           status="OK", has_defect=False, fields=checks)
 
     except Exception as e:
         return EmailResult(email_id=email_id, category="GENERAL",
                            status="NEEDS_REVIEW", review_reason="unreadable", error=str(e))
 
-def process_all(inbox) -> list[EmailResult]:
-    return [process_email(email, inbox) for email in inbox]
+
+def process_all(inbox, use_cache: bool = True) -> list[EmailResult]:
+    # Reuse saved results if we have them → instant, no API calls.
+    if use_cache and os.path.exists(CACHE_PATH):
+        with open(CACHE_PATH) as f:
+            data = json.load(f)
+        return [EmailResult(**d) for d in data]
+
+    emails = list(inbox)
+    results = []
+    for i, email in enumerate(emails, 1):
+        results.append(process_email(email, inbox))
+        print(f"[{i}/{len(emails)}] {email.get('email_id')} done", flush=True)
+
+    os.makedirs("cache", exist_ok=True)
+    with open(CACHE_PATH, "w") as f:
+        json.dump([r.model_dump() for r in results], f, indent=2)
+    print(f"✅ Cached {len(results)} results to {CACHE_PATH}", flush=True)
+    return results

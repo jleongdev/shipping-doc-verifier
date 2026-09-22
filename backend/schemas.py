@@ -8,6 +8,12 @@ ReviewReason = Literal["wrong_doc_type", "missing_attachment", "unreadable", "mi
 FIELDS = ["shipper", "consignee", "notify_party", "port_of_loading",
           "port_of_discharge", "container_count", "gross_weight_kg"]
 
+class FieldCheck(BaseModel):
+    field: str
+    si_value: Optional[str] = None
+    bl_value: Optional[str] = None
+    match: bool
+
 class EmailResult(BaseModel):
     email_id: str
     category: Category
@@ -17,3 +23,6 @@ class EmailResult(BaseModel):
     defect_fields: list[str] = []
     review_reason: Optional[ReviewReason] = None
     error: Optional[str] = None
+
+# add to EmailResult:
+    fields: list[FieldCheck] = []
